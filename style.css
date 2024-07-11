@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* font-family: "Quicksand", sans-serif; */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
+.container {
+  position: relative;
+  max-width: 600px;
+  height: 100vh;
+  background-color: #bcfdef;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .penger {
+  display: flex;
+  align-items: center;
+}
+.header .penger img {
+  width: 78px;
+}
+.header i {
+  font-size: 50px;
+}
+.main input {
+  width: 70%;
+  display: block;
+  font-size: 34px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 40px auto;
+}
+
+#kanin {
+  width: 50%;
+  display: block;
+  margin: 0px auto 50px;
+}
+#info {
+  display: none;
+  background-color: #8be5d1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+}
+#info h1 {
+    text-align: center;
+    padding: 20px 10px 50px;
+    font-size: 60px;
+}
+#info i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 50px;
+}
+#info p {
+    padding: 20px 30px;
+}
+#info.show {
+  display: block;
+}

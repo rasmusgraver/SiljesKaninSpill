@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siljes Kaninspill</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="penger"><img src="bilder/coin.png" alt="penge" />100</div>
+        <div onclick="info()"><i class="fa-solid fa-circle-info"></i></div>
+      </div>
+      <div class="main">
+        <div class="navn">
+            <input id="navninput" type="text" placeholder="Gi meg et navn" />
+          </div>
+          <img id="kanin" src="bilder/kanin.png" alt="kanin" />
+      </div>
+      <div id="info">
+        <h1>INFO</h1>
+        <i onclick="info()" class="fa-regular fa-circle-xmark"></i>
+        <p>Laget av: Silje og Rasmus Mosekjær Graver</p>
+        <p>Lyd: (Kommer snart)</p>
+        <p>Språk: Norsk</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
