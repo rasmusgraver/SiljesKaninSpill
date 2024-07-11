@@ -87,17 +87,17 @@ body {
   display: block;
 }
 
-.venstre {
-  position: absolute;
-  left: 0;
-  bottom: 400px;
-}
+.venstre,
 .hoyre {
   position: absolute;
-  right: 0;
   bottom: 200px;
 }
-
+.venstre {
+  left: 0;
+}
+.hoyre {
+  right: 0;
+}
 .venstre div,
 .hoyre div {
   border: 1px solid black;
