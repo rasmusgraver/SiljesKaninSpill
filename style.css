@@ -20,14 +20,11 @@ body {
   height: 100vh;
   background-color: #bcfdef;
   margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 .header .penger {
   display: flex;
@@ -39,19 +36,30 @@ body {
 .header i {
   font-size: 50px;
 }
+.main .navn {
+    margin: 20px 0;
+}
 .main input {
   width: 70%;
   display: block;
+  margin: auto;
   font-size: 34px;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 40px auto;
 }
-
 #kanin {
-  width: 50%;
-  display: block;
-  margin: 0px auto 50px;
+  width: 250px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);  
+  bottom: 63px;
+}
+#gress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    height: 310px;
 }
 #info {
   display: none;
