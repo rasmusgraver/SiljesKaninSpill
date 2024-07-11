@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 /* font-family: "Quicksand", sans-serif; */
-
 
 * {
   padding: 0;
@@ -37,7 +36,7 @@ body {
   font-size: 50px;
 }
 .main .navn {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 .main input {
   width: 70%;
@@ -51,15 +50,15 @@ body {
   width: 250px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0);  
+  transform: translate(-50%, 0);
   bottom: 63px;
 }
 #gress {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    height: 310px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  height: 310px;
 }
 #info {
   display: none;
@@ -69,22 +68,40 @@ body {
   top: 0;
   height: 100%;
   width: 100%;
-
 }
 #info h1 {
-    text-align: center;
-    padding: 20px 10px 50px;
-    font-size: 60px;
+  text-align: center;
+  padding: 20px 10px 50px;
+  font-size: 60px;
 }
 #info i {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 50px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 50px;
 }
 #info p {
-    padding: 20px 30px;
+  padding: 20px 30px;
 }
 #info.show {
   display: block;
+}
+
+.venstre {
+  position: absolute;
+  left: 0;
+  bottom: 400px;
+}
+.hoyre {
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+}
+
+.venstre div,
+.hoyre div {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 20px 0;
 }
