@@ -16,8 +16,16 @@
   <body>
     <div class="container">
       <header>
-        <div class="penger"><img src="bilder/coin.png" alt="penge" />100</div>
-        <div onclick="info()"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="penger">
+          <img src="bilder/coin.png" alt="penge" onclick="tjenpenger()" />
+          <span id="saldo">x</span>
+        </div>
+        <div id="infoknapp" onclick="info()">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div id="hjemknapp" onclick="hjem()" style="display: none">
+          <i class="fa-solid fa-house"></i>
+        </div>
       </header>
       <main>
         <div class="navn">
@@ -42,14 +50,13 @@
           <div></div>
           <div></div>
           <div></div>
-          <div></div>
         </div>
         <div id="klaer" style="display: none"></div>
       </footer>
 
       <div id="info">
         <h1>INFO</h1>
-        <i onclick="info()" class="fa-regular fa-circle-xmark"></i>
+        <i onclick="info(true)" class="fa-regular fa-circle-xmark"></i>
         <p>Laget av: Silje og Rasmus Mosekjær Graver</p>
         <p>Lyd: (Kommer snart)</p>
         <p>Språk: Norsk</p>
