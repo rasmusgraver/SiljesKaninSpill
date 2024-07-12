@@ -38,8 +38,8 @@ header i {
   font-size: 50px;
 }
 main {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 main .navn {
   margin: 20px 0;
@@ -53,8 +53,8 @@ main input {
   border-radius: 5px;
 }
 footer {
-    height: 200px;
-    background-color: #8be5d1;
+  height: 200px;
+  background-color: #8be5d1;
 }
 #kanin {
   width: 250px;
@@ -109,10 +109,30 @@ footer {
 .hoyre {
   right: 0;
 }
-.venstre div,
-.hoyre div {
+.venstre > div,
+.hoyre > div {
   border: 1px solid black;
   height: 100px;
   width: 100px;
   margin: 20px 0;
+  padding: 10px;
+  font-size: 24px;
+}
+
+#mat,
+#klaer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+  overflow: scroll;
+}
+
+#mat > div,
+#klaer > div {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: lightcoral;
+  flex-shrink: 0;
 }

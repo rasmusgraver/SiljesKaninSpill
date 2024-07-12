@@ -1,8 +1,13 @@
-function info() {
-  document.getElementById("info").classList.toggle("show")
+const navninput = document.getElementById("navninput")
+const matdiv = document.getElementById("mat")
+const klaerdiv = document.getElementById("klaer")
+
+// Hent opp lagret navn fra localStorage:
+const navnLagret = localStorage.getItem("navn")
+if (navnLagret) {
+  navninput.value = navnLagret
 }
 
-const navninput = document.getElementById("navninput")
 navninput.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault()
@@ -11,8 +16,10 @@ navninput.addEventListener("keypress", function (event) {
   }
 })
 
-// Hent opp lagret navn fra localStorage:
-const navnLagret = localStorage.getItem("navn")
-if (navnLagret) {
-  navninput.value = navnLagret
+function info() {
+  document.getElementById("info").classList.toggle("show")
 }
+
+function mat() {}
+
+function klaer() {}
