@@ -25,11 +25,8 @@ function tjenpenger() {
 }
 
 navninput.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault()
-    const navn = navninput.value.trim()
-    localStorage.setItem("navn", navn)
-  }
+  const navn = navninput.value.trim()
+  localStorage.setItem("navn", navn)
 })
 
 function info(skjul = false) {
@@ -96,4 +93,3 @@ for (let matdiv of matDivs) {
     event.target.style.top = event.clientY + "px"
   })
 }
-

@@ -100,7 +100,7 @@ footer {
 .venstre,
 .hoyre {
   position: absolute;
-  bottom: 160px;
+  bottom: 100px;
   z-index: 4;
 }
 .venstre {
@@ -112,8 +112,8 @@ footer {
 .venstre > div,
 .hoyre > div {
   border: 1px solid black;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   margin: 20px 0;
   padding: 10px;
   font-size: 24px;
@@ -146,8 +146,7 @@ footer {
   display: block;
 }
 #slikkpinn img {
-    width: 80%;
-    margin: auto;
-    display: block;
-  }
-  
+  width: 80%;
+  margin: auto;
+  display: block;
+}
