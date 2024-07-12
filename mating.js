@@ -81,8 +81,8 @@ function getXandY() {
 function spis() {
   kaninElm.src = "bilder/munn.png"
   spiseElm.style.width = "20px"
-  spiseElm.style.left = targetX + "px"
-  spiseElm.style.top = targetY + "px"
+  spiseElm.style.left = targetX - 10 + "px"
+  spiseElm.style.top = targetY - 3 + "px"
   setTimeout(spisFerdig, 1000)
 }
 
