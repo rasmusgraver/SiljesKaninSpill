@@ -80,3 +80,20 @@ function spill2() {
   matdiv.style.display = "none"
   klaerdiv.style.display = "none"
 }
+
+matDivs = document.querySelectorAll("#mat > div")
+for (let matdiv of matDivs) {
+  matdiv.addEventListener("touchstart", (event) => {
+    const target = event.target
+    target.style.display = "absolute"
+    target.style.left = event.clientX + "px"
+    target.style.top = event.clientY + "px"
+    console.log("Trykket på ", target)
+  })
+
+  matdiv.addEventListener("touchmove", (event) => {
+    event.target.style.left = event.clientX + "px"
+    event.target.style.top = event.clientY + "px"
+  })
+}
+

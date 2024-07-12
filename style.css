@@ -53,7 +53,7 @@ main input {
   border-radius: 5px;
 }
 footer {
-  height: 200px;
+  height: 140px;
   background-color: #8be5d1;
 }
 #kanin {
@@ -125,14 +125,29 @@ footer {
   gap: 20px;
   justify-content: space-around;
   padding: 20px;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: #d5c3ed;
 }
 
 #mat > div,
 #klaer > div {
   border: 1px solid black;
+  border-radius: 5px;
   height: 100px;
   width: 100px;
-  background-color: lightcoral;
+  background-color: #8be5d1;
   flex-shrink: 0;
 }
+
+#melon img {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+#slikkpinn img {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  
