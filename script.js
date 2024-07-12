@@ -17,9 +17,35 @@ navninput.addEventListener("keypress", function (event) {
 })
 
 function info() {
+  skjulAside()
   document.getElementById("info").classList.toggle("show")
 }
 
-function mat() {}
+function skjulAside() {
+  const asides = document.querySelectorAll("aside")
+  for (let aside of asides) {
+    aside.style.display = "none"
+  }
+}
 
-function klaer() {}
+function mat() {
+  skjulAside()
+  matdiv.style.display = "flex"
+  klaerdiv.style.display = "none"
+}
+
+function klaer() {
+  skjulAside()
+  matdiv.style.display = "none"
+  klaerdiv.style.display = "flex"
+}
+
+function spill1() {
+  matdiv.style.display = "none"
+  klaerdiv.style.display = "none"
+}
+
+function spill2() {
+  matdiv.style.display = "none"
+  klaerdiv.style.display = "none"
+}
