@@ -12,39 +12,49 @@ img {
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 30px;
+  background-color: #bcfdef;
 }
 .container {
-  position: relative;
   max-width: 600px;
   height: 100vh;
   background-color: #bcfdef;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-.header {
+header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-.header .penger {
+header .penger {
   display: flex;
   align-items: center;
 }
-.header .penger img {
+header .penger img {
   width: 78px;
 }
-.header i {
+header i {
   font-size: 50px;
 }
-.main .navn {
+main {
+    position: relative;
+    height: 100%;
+}
+main .navn {
   margin: 20px 0;
 }
-.main input {
+main input {
   width: 70%;
   display: block;
   margin: auto;
   font-size: 34px;
   border: 1px solid black;
   border-radius: 5px;
+}
+footer {
+    height: 200px;
+    background-color: #8be5d1;
 }
 #kanin {
   width: 250px;
@@ -90,7 +100,8 @@ body {
 .venstre,
 .hoyre {
   position: absolute;
-  bottom: 200px;
+  bottom: 160px;
+  z-index: 4;
 }
 .venstre {
   left: 0;
