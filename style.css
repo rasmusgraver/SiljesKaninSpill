@@ -58,7 +58,7 @@ main input {
   border-radius: 5px;
 }
 footer {
-/*  height: 140px; */
+  /*  height: 140px; */
   background-color: #8be5d1;
 }
 #kanin {
@@ -143,6 +143,10 @@ footer {
   width: 100px;
   background-color: #8be5d1;
   flex-shrink: 0;
+}
+#mat > div img,
+#klaer > div img {
+  z-index: 7;
 }
 
 #melon img {
