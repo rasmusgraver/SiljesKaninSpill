@@ -77,18 +77,3 @@ function spill2() {
   matdiv.style.display = "none"
   klaerdiv.style.display = "none"
 }
-
-const matElms = document.querySelectorAll("#mat > div > img")
-for (let matElm of matElms) {
-  matElm.addEventListener("touchstart", (event) => {
-    const target = event.target
-    target.classList.add("HEIE")
-    target.style.width = "50px"
-    target.style.position = "fixed"
-  })
-
-  matElm.addEventListener("touchmove", (event) => {
-    event.target.style.left = event.changedTouches[0].clientX - 25 + "px"
-    event.target.style.top = event.changedTouches[0].clientY - 25 + "px"
-  })
-}
