@@ -68,6 +68,20 @@ footer {
   transform: translate(-50%, 0);
   bottom: 63px;
 }
+#output {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  bottom: 150px;
+  text-align: center;
+  background-image: url(bilder/boble.png);
+  z-index: 10;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+  font-size: 20px;
+}
 #gress {
   position: absolute;
   bottom: 0;

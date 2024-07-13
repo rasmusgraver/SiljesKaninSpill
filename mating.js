@@ -16,9 +16,13 @@ for (let elm of matElms) {
 
 function dragStart(event) {
   if (spiseElm == null) {
-    spiseElm = event.target
-    spiseElm.style.width = "50px"
-    spiseElm.style.position = "fixed"
+    if (saldo < 200) {
+      visMelding("Du har ikke nok penger!!")
+    } else {
+      spiseElm = event.target
+      spiseElm.style.width = "50px"
+      spiseElm.style.position = "fixed"
+    }
   }
 }
 
@@ -72,4 +76,5 @@ function spisFerdig() {
   spiseElm.style.position = null
   spiseElm.style.width = null
   spiseElm = null
+  brukpenger(200)
 }

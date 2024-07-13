@@ -4,6 +4,7 @@ const klaerdiv = document.getElementById("klaer")
 const infoknapp = document.getElementById("infoknapp")
 const hjemknapp = document.getElementById("hjemknapp")
 const saldoElm = document.getElementById("saldo")
+const outputElm = document.getElementById("output")
 
 // Hent opp lagret navn fra localStorage:
 const navnLagret = localStorage.getItem("navn")
@@ -21,6 +22,10 @@ function oppdaterSaldo(saldo) {
 
 function tjenpenger() {
   saldo += 100
+  oppdaterSaldo(saldo)
+}
+function brukpenger(kr) {
+  saldo -= kr
   oppdaterSaldo(saldo)
 }
 
@@ -76,4 +81,14 @@ function spill1() {
 function spill2() {
   matdiv.style.display = "none"
   klaerdiv.style.display = "none"
+}
+
+function visMelding(tekst) {
+    outputElm.innerHTML = tekst
+    outputElm.style.display = "block"
+    setTimeout(skjulMelding, 2000)
+}
+
+function skjulMelding() {
+  outputElm.style.display = "none"
 }
