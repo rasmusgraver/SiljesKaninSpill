@@ -73,11 +73,6 @@ function klaer() {
   klaerdiv.style.display = "flex"
 }
 
-function spill1() {
-  matdiv.style.display = "none"
-  klaerdiv.style.display = "none"
-}
-
 function spill2() {
   matdiv.style.display = "none"
   klaerdiv.style.display = "none"
